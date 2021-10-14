@@ -1,0 +1,41 @@
+enable
+config t
+
+interface fa0/0
+ip address 172.16.0.190 255.255.255.192
+no shut
+do wr
+exit
+
+interface se2/0
+ip address 192.168.10.242 255.255.255.248
+clock rate 64000
+no shut
+do wr
+exit
+
+interface se3/0
+ip address 192.168.10.249 255.255.255.252
+no shut
+do wr
+exit
+
+interface se4/0
+ip address 172.16.0.193 255.255.255.224
+clock rate 64000
+no shut
+do wr
+exit
+
+router ospf 3
+network 192.168.10.240 0.0.0.7 area 1
+network 192.168.10.248 0.0.0.3 area 1
+network 172.16.0.128 0.0.0.63 area 1
+network 172.16.0.192 0.0.0.31 area 1
+exit
+
+config t
+interface fa0/0
+ip helper-address 192.168.10.129
+do wr
+exit

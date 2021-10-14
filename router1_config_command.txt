@@ -1,0 +1,52 @@
+enable
+
+config t
+interface fa0/0
+ip address 192.168.20.126 255.255.255.128
+no shut
+do wr
+exit
+
+interface fa1/0
+ip address 192.168.20.190 255.255.255.192
+no shut
+do wr
+exit
+
+interface se2/0
+ip address 192.168.10.194 255.255.255.224
+no shut
+do wr
+exit
+
+interface se3/0
+ip address 192.168.10.241 255.255.255.248
+no shut
+do wr
+exit
+
+interface se4/0
+ip address 192.168.10.225 255.255.255.240
+no shut
+do wr
+exit
+
+router ospf 2
+network 192.168.20.0 0.0.0.127 area 1
+network 192.168.10.192 0.0.0.31 area 1
+network 192.168.20.128 0.0.0.63 area 1
+network 192.168.10.240 0.0.0.7 area 1
+network 192.168.10.224 0.0.0.15 area 1
+exit
+
+config t
+interface fa0/0
+ip helper-address 192.168.10.129
+do wr
+exit
+
+config t
+interface fa1/0
+ip helper-address 192.168.10.129
+do wr
+exit

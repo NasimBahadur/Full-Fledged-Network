@@ -1,0 +1,39 @@
+enable
+
+config t
+interface fa0/0
+ip address 192.168.10.126 255.255.255.128
+no shut
+do wr
+exit
+
+interface fa1/0
+ip address 192.168.10.190 255.255.255.192
+no shut
+do wr
+exit
+
+interface se2/0
+ip address 192.168.10.193 255.255.255.224
+clock rate 64000
+no shut
+do wr
+exit
+
+router ospf 1
+network 192.168.10.0 0.0.0.127 area 1
+network 192.168.10.128 0.0.0.63 area 1
+network 192.168.10.192 0.0.0.31 area 1
+exit
+
+config t
+interface fa0/0
+ip helper-address 192.168.10.129
+do wr
+exit
+
+config t
+interface fa1/0
+ip helper-address 192.168.10.129
+do wr
+exit
