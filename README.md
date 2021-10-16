@@ -25,9 +25,6 @@ Cisco packet tracer 8.0.0
 4. End devices: PC-PT, Server-PT, Laptop-PT, TabletPC-PT, SMARTPHONE-PT
 5. Cable: Copper Straight-through, Serial DCE & Automatically choose connection type (for configuring wireless network system through AccessPoint-PT)
 
-# Physical diagram
-![Screenshot from 2021-10-16 21-47-01](https://user-images.githubusercontent.com/43060004/137594227-53fe1e81-0b7c-4840-8e0e-f579a1eecff6.png)
-
 # Design
 1. Services: DHCP, DNS, Web
 2. DHCP server IP: 192.168.10.129 (static)
@@ -36,6 +33,9 @@ Cisco packet tracer 8.0.0
 5. DNS server IP: 192.168.10.130 (static)
 6. Dynamic routing algorithm (using OSPF protocol)
 7. Incorporated subnetting into 3 different types of class IP Address
+
+# Physical diagram
+![Screenshot from 2021-10-16 21-47-01](https://user-images.githubusercontent.com/43060004/137594227-53fe1e81-0b7c-4840-8e0e-f579a1eecff6.png)
 
 # Testing
 Successfully ping for most of the case
