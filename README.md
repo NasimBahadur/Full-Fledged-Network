@@ -2,7 +2,7 @@
 In this project, I designed a full-fledged network for an organization with multiple subnets using CISCO packet tracer. Here, I used 3 different types of IP addresses. Configured the whole network in such a way that IP for the hosts of different networks will be automatically assigned by a single DHCP server.
 
 # Installation 
-To run the "design.pkt" file, at first, you have to create an account in https://www.netacad.com/ and install the 'CISCO PACKET TRACER' software.
+To run the "networkDesign.pkt" file, at first, you have to create an account in https://www.netacad.com/ and install the 'CISCO PACKET TRACER' software.
 
 # Design Description
 We have to build a complete model of a complex network by discovering the interconnectivity of the system and subnetworks that will reflect the INTERNATIONAL APOLLO University’s structure and facilities within the network will include the bellow’s features:
