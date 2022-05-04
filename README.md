@@ -35,14 +35,14 @@ Cisco packet tracer 8.0.0
 7. Incorporated subnetting into 3 different types of class IP Address
 
 # Physical diagram
-![Screenshot from 2021-10-16 21-47-01](https://user-images.githubusercontent.com/43060004/137594227-53fe1e81-0b7c-4840-8e0e-f579a1eecff6.png)
+![Physical diagram](https://user-images.githubusercontent.com/43060004/137594227-53fe1e81-0b7c-4840-8e0e-f579a1eecff6.png)
 
 # Testing
 Successfully ping for most of the case
 
-![Screenshot from 2021-10-16 21-54-16](https://user-images.githubusercontent.com/43060004/137594229-46d40c62-77c8-46e2-acb2-3b3ac6ebcf6c.png)
+![Ping Successful Image](https://user-images.githubusercontent.com/43060004/137594229-46d40c62-77c8-46e2-acb2-3b3ac6ebcf6c.png)
 
 Any devices can access the University website by entering http://www.apollointernational.edu
 
-![Screenshot from 2021-10-16 21-59-32](https://user-images.githubusercontent.com/43060004/137594230-faabf6d1-c885-43d0-89e7-90b69b5e03e8.png)
+![Access University Website Image](https://user-images.githubusercontent.com/43060004/137594230-faabf6d1-c885-43d0-89e7-90b69b5e03e8.png)
 
